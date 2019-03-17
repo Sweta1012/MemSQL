@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>MemSQL Take Home Task</title>
+
+        <!-- Custom CSS style file -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+        <!-- Google Font CDN -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+        <!-- jQuery CDN -->
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        
+        <!-- Javascript file -->
+        <script src="js/index.js"></script>
+
+    </head>
+    <body>
+        <div class="content">
+
+                    <div>
+                        <div class="header">
+                            <img src="images/MemSQL_horizontal_lockup_grey-white_logo.svg" alt="logo">
+                        </div>
+                        <div class="icon">
+                               <img src="images/demo_icon.PNG" alt="">
+                        </div>
+                         
+                        <h1 class="demo">Book a Demo</h1>
+                       <p class="help"> Help us customize your demo by answering the following questions below.</p>
+                    </div>
+
+                    <div>
+                        <form class="formStyle">
+
+                            <div class="businessEmail">
+                               <label for="email">Business Email</label> <br>
+                                <input type="text" id="email" name="email"> <br>
+                                <span id="emailrequire" class="error"></span>
+                            </div>
+
+                            <div class="businessEmail">
+                                    <label for="size">Business Size</label><br>
+                                    <select name="size" id="size" required class="selectsize" > 
+                                        <option value="Please Select">Please Select</option>
+                                        <option value="1-10">1-10</option>
+                                        <option value="11-50">11-50</option>
+                                        <option value="51-100">51-100</option>
+                                        <option value="101-250">101-250</option>
+                                        <option value="250+">250+</option>
+                                    </select>
+                                    <p id="sizeerror" class="error"></p>
+                            </div>
+                          
+                            <div class="radiodiv">
+                                    
+                                <label class="radiolabel" for="radio">What is the most important thing to you in a solution?</label>
+                                <p id="radioerror" class="errormsg"></p>   
+                                <table style="margin: 8%">
+                                        <tr>
+                                            <td><input type="radio" name="indicator" id="Real-Time_Analytics" value="Real-Time Analytics" required>
+                                                <span class="radioinput"> Real-Time Analytics</span>
+                                             </td>
+                                            <td> <input type="radio" id="Scalability" name="indicator" value="Scalability">
+                                                <span class="radioinput">Scalability</span> 
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                    <input type="radio" id="Query_Responce_Time" name="indicator" value="Query Responce Time">
+                                                    <span class="radioinput">Query Responce Time </span>
+                                            </td>
+                                            <td>
+                                                    <input type="radio" id="Document_Storage" name="indicator" value="Document Storage">
+                                                    <span class="radioinput">Document Storage</span>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                    <input type="radio" id="High_Concurrency" name="indicator" value="High Concurrency">
+                                                    <span class="radioinput">High Concurrency </span>
+                                            </td>
+                                            <td>
+                                                    <input type="radio" id="Full_Text_Search" name="indicator" value="Full Text Search">
+                                                    <span class="radioinput">Full Text Search </span>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                    <input type="radio" id="Fast-Data_Ingest" name="indicator" value="Fast-Data Ingest">
+                                                    <span class="radioinput">Fast-Data Ingest </span>
+                                            </td>
+                                            <td>
+                                                    <input type="radio" id="Price" name="indicator" value="Price">
+                                                    <span class="radioinput">Price </span>
+                                            </td>
+                                        </tr>
+                                       
+                                    </table>
+                        
+                </div>
+                        
+                            <button type="button" class="submitbutton" name="submit" id="submit">Continue to Schedule a Time -></button>
+                        </form>
+                    </div>
+        </div>
+    </body>
+</html>
